@@ -1,0 +1,66 @@
+# --- Secrets
+.env
+.env.*
+!.env.example
+
+# --- Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- Node / frontend build
+frontend/node_modules/
+frontend/dist/
+node_modules/
+
+# --- Runtime data (chats, traces, memory, accounts, datasets, embedding cache)
+data/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# --- Generated from workspace/classifiers (NeMo Guardrails configs)
+workspace/
+
+.claude/
+
+# --- Classifier service environments
+services/nemo_guardrails/venv/
+
+# --- Models and weights
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+*.gguf
+*.onnx
+model_cache/
+models/
+.cache/
+
+# --- Logs
+*.log
+logs/
+runtime_logs/
+
+# --- Temporary and OS files
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Editors and local tool settings
+.vscode/
+.idea/
+.claude/settings.local.json
